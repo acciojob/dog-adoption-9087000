@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Adoption Application</title>
+  <!-- Bootstrap CSS link -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f7f7;
+      margin-top: 50px;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <div class="form-container">
+    <h2>Dog Adoption Application</h2>
+    <form>
+      <!-- Name Field -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Name" required>
+      </div>
+
+      <!-- Phone Number Field -->
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+      </div>
+
+      <!-- Address Field -->
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" class="form-control" placeholder="Address" required>
+      </div>
+
+      <!-- Lived with a Dog Checkbox -->
+      <div class="form-group form-check">
+        <input type="checkbox" id="checkbox" class="form-check-input" value="Have you ever lived with a Dog before?">
+        <label for="checkbox" class="form-check-label">Have you ever lived with a Dog before?</label>
+      </div>
+
+      <!-- Preferred Breeds Multi-Select -->
+      <div class="form-group">
+        <label for="breeds">Please select your preferred breeds</label>
+        <select id="breeds" class="form-control" multiple required>
+          <option value="labrador">Labrador Retriever</option>
+          <option value="german_shepherd">German Shepherd</option>
+          <option value="golden_retriever">Golden Retriever</option>
+          <option value="beagle">Beagle</option>
+          <option value="bulldog">Bulldog</option>
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <input type="submit" id="submit" class="btn btn-primary btn-block" value="Submit">
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
