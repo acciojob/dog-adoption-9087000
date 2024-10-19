@@ -1,82 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dog Adoption Application</title>
-  <!-- Bootstrap CSS link -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f7f7f7;
-      margin-top: 50px;
-    }
-    .form-container {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .form-group label {
-      font-weight: bold;
-    }
-  </style>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+	<form method="post">
+      <div>
+	<label for="name">Name: </label>
+	<input type="text" id="name" name="name" placeholder="Name"><br><br>
 
-  <div class="form-container">
-    <h2>Dog Adoption Application</h2>
-    <form>
-      <!-- Name Field -->
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" class="form-control" placeholder="Name" required>
-      </div>
+	<label for="phone">Phone Number: </label>
+	<input type="text" id="phone" name="phone" placeholder="Phone Number"><br><br>
 
-      <!-- Phone Number Field -->
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
-      </div>
+	<label for="address">Address: </label>
+	<input type="text" id="address" name="address" placeholder="Address"><br><br>
 
-      <!-- Address Field -->
-      <div class="form-group">
-        <label for="address">Address</label>
-        <input type="text" id="address" class="form-control" placeholder="Address" required>
-      </div>
+		  <input type="checkbox" id="checkbox"><label for="checkbox">Value should be:"Have you ever lived with a Dog before?"</label><br><br>
+      
+      <label for="multiselect">Please select your preferred breeds:</label>
+      <select style="width: 200px" 
+                size="8" multiple>
+            <option value='blue'>Blue</option>
+            <option value='green'>Green</option>
+            <option value='red'>Red</option>
+            <option value='yellow'>Yellow</option>
+            <option value='orange'>Orange</option>
+        </select><br><br>
+<!--         <select type="select" name="multiselect" id="multiSelect" multiple>
+          <option value="volvo">Pavolian</option>
+          <option value="saab">bulldog</option>
+          <option value="mercedes">Foxhound</option>
 
-      <!-- Lived with a Dog Checkbox -->
-      <div class="form-group form-check">
-        <input type="checkbox" id="checkbox" class="form-check-input" value="Have you ever lived with a Dog before?">
-        <label for="checkbox" class="form-check-label">Have you ever lived with a Dog before?</label>
-      </div>
+        </select><br><br> -->
 
-      <!-- Preferred Breeds Multi-Select -->
-      <div class="form-group">
-        <label for="breeds">Please select your preferred breeds</label>
-        <select id="breeds" class="form-control" multiple required>
-          <option value="labrador">Labrador Retriever</option>
-          <option value="german_shepherd">German Shepherd</option>
-          <option value="golden_retriever">Golden Retriever</option>
-          <option value="beagle">Beagle</option>
-          <option value="bulldog">Bulldog</option>
-        </select>
-      </div>
+	
 
-      <!-- Submit Button -->
-      <input type="submit" id="submit" class="btn btn-primary btn-block" value="Submit">
-    </form>
-  </div>
+	
+      
+	<button type="submit" id="submit" name="submit">Submit</button>
+</div>
+</form>
+	
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
